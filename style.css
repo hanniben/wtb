@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'bm_italic';
+    src: url(fonts/BodoniModa_72pt-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: 'bm_reg';
+    src: url(fonts/BodoniModa_72pt-Medium.ttf);
+}
+
+body {
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vw;
+    text-align: left;
+    width: 60vw;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'bm_reg', sans-serif;
+    font-size: 3em;
+}
+
+h2, h3 {
+    font-family: 'bm_italic', sans-serif;
+}
