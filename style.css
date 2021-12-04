@@ -1,15 +1,26 @@
 @font-face {
-    font-family: 'bm_italic';
-    src: url(fonts/BodoniModa_72pt-MediumItalic.ttf);
+    font-family: 'bm_med';
+    src: url(fonts/BodoniModa_72pt-Medium.ttf);
 }
 
 @font-face {
-    font-family: 'bm_reg';
-    src: url(fonts/BodoniModa_72pt-Medium.ttf);
+    font-family: 'bm_sb';
+    src: url(fonts/BodoniModa_72pt-SemiBold.ttf);
 }
 
 body {
     text-align: center;
+    width: 70vw;
+    margin: auto;
+}
+
+#heading a{
+    text-decoration: none;
+    color: black;
+}
+
+#heading, #divider {
+    background-color: antiquewhite;
 }
 
 .content {
@@ -25,11 +36,24 @@ body {
     width: 100%;
 }
 
+.content p {
+    text-align: justify;
+}
+
 h1 {
-    font-family: 'bm_reg', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 3em;
 }
 
 h2, h3 {
-    font-family: 'bm_italic', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.img-credit {
+    font-size: 16px;
 }
