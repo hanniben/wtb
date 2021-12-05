@@ -19,5 +19,5 @@ function gifTwoAni() {
 function gifThreeAni() {
     timer = setTimeout("gifOneAni()", 28000);
     document.getElementById("gifTwo").src = "images/spicecake_still2.png";
-    document.getElementById("gifThree").src = "images/spicecake_gif3.gif";
+    document.getElementById("gifThree").src = "images/spicecake_vid3.gif";
 }
