@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <title>What's That Bake Episode 1</title>
     <link rel="stylesheet" href="style.css"/>
+    <script>
+        function skipRecipe(player, skip) {
+            var player = document.getElementById("podcast");
+            var currentTime = player.currentTime;
+            player.currentTime = skip;
+        }
+    </script>
 </head>
 <body>
     <div id="heading">
@@ -86,9 +93,13 @@
 
     <div>
         <h4>Alright, let's get started!</h4>
-        <audio controls>
+        <audio controls id="podcast">
             <source src="media/spicecake_mixdown.mp3" type="audio/mp3">
+            Your browser does not support HTML5 audio. <a href="https://soundcloud.com/ashleigh-kenworthy/whats-that-bake-episode-1-spice-cakes-leavening-and-really-long-book-titles?si=28624ca509a644cd9fa00ae56c27f19b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Find the podcast here.</a>
         </audio>
+        <br>
+        <button onclick="skipRecipe('podcast', '60')" class="skip-btn">Skip to Cake</button>
+        <button onclick="skipRecipe('podcast', '1722')" class="skip-btn">Skip to Icing</button>
         <br>
         <a href="pdfs/What's that Bake Episode 1 Spice Cake Transcript.pdf">Download the Transcript</a>
 
